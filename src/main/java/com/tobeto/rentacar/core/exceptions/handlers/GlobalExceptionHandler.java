@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler ({ MethodArgumentNotValidException. class })
-    @ResponseStatus (HttpStatus. BAD_REQUEST )
+    @ResponseStatus (HttpStatus.BAD_REQUEST )
     public ValidationProblemDetails handleValidationException (MethodArgumentNotValidException exception) {
 
         Map<String , String> validationErrors = new HashMap<>() ;

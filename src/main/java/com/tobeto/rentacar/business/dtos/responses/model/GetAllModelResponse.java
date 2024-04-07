@@ -10,9 +10,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Data
 public class GetAllModelResponse {
+    private int id;
     private String name;
     private int brandId;
     private int fuelId;
     private int transmissionId;
     private LocalDateTime createdDate;
+    private String fuelName;
+    private String transmissionName;
+    private String brandName;
 }

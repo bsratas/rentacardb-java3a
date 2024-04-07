@@ -32,4 +32,8 @@ public class Car extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "modelId")
     private Model model;
+
+    @ManyToOne
+    @JoinColumn(name="userId")
+    private User user;
 }

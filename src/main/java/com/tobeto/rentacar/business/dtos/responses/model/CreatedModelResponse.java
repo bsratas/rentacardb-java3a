@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Data
 public class CreatedModelResponse {
+    private int id;
     private String name;
     private int brandId;
     private int fuelId;
